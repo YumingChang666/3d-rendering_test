@@ -204,6 +204,7 @@ int zculling ( int counter, CandidatePixel fragments[], int size, Pixel pixels[]
 
     // initilize the z-buffer in rendering first triangle for an image
     static bit8 z_buffer[MAX_X][MAX_Y];
+//    bit8 z_buffer[MAX_X][MAX_Y];
     if (counter == 0)
     {
         ZCULLING_INIT_ROW: for ( int i = 0; i < MAX_X; i ++ )

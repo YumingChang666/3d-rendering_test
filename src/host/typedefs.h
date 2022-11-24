@@ -10,13 +10,22 @@
 #define __TYPEDEFS_H__
 
 // resolution 256x256
-const int MAX_X = 256;
-const int MAX_Y = 256;
+//const int MAX_X = 256;
+//const int MAX_Y = 256;
+#define MAX_X 256
+#define MAX_Y 256
 
 // number of values in frame buffer: 32 bits
-const int NUM_FB = MAX_X * MAX_Y / 4;
+//const int NUM_FB = MAX_X * MAX_Y / 4;
+#define NUM_FB (MAX_X * MAX_Y / 4)
 // dataset information 
-const int NUM_3D_TRI = 3192;
+//const int NUM_3D_TRI = 3192;
+#define NUM_3D_TRI 3192
+
+typedef enum
+{
+    true=1, false=0
+}bool;
 
 #ifdef OCL
   #include <string>

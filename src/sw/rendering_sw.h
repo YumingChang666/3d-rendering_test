@@ -13,6 +13,7 @@
 #define __RENDERING_SW_H__
 
 #include "../host/typedefs.h"
+//#include <stdbool.h>
 
 void rendering_sw(Triangle_3D triangle_3ds[NUM_3D_TRI], bit8 output[MAX_X][MAX_Y]);
 
