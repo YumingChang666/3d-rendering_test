@@ -6,8 +6,6 @@
 /*                                                               */
 /*===============================================================*/
 
-#ifndef SW
-void check_results(bit32* output);
-#else
+
 void check_results(bit8 output[MAX_X][MAX_Y]);
-#endif
+

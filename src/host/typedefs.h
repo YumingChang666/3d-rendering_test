@@ -27,26 +27,20 @@ typedef enum
     true=1, false=0
 }bool;
 
-#ifdef OCL
-  #include <string>
-  // target device
-  // change here to map to a different device
-  const std::string TARGET_DEVICE = "xilinx_aws-vu9p-f1-04261818_dynamic_5_0";
-#endif
 
-#ifndef SW
-  // hls header
-  #include "ap_int.h"
-  // specialized datatypes
-  typedef ap_uint<1> bit1;
-  typedef ap_uint<2> bit2;
-  typedef ap_uint<8> bit8;
-  typedef ap_uint<16> bit16;
-  typedef ap_uint<32> bit32;
-#else
+//#ifndef SW
+//  // hls header
+//  #include "ap_int.h"
+//  // specialized datatypes
+//  typedef ap_uint<1> bit1;
+//  typedef ap_uint<2> bit2;
+//  typedef ap_uint<8> bit8;
+//  typedef ap_uint<16> bit16;
+//  typedef ap_uint<32> bit32;
+//#else
   typedef unsigned char bit8;
   typedef unsigned int bit32;
-#endif
+//#endif
 
 // struct: 3D triangle
 typedef struct

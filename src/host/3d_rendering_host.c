@@ -39,14 +39,12 @@ int main(int argc, char ** argv)
     // timers
     struct timeval start, end;
 
-#ifdef SW
     // output
     bit8 output[MAX_X][MAX_Y];
     // run and time sw function
     gettimeofday(&start, 0);
     rendering_sw(triangle_3ds, output);
     gettimeofday(&end, 0);
-#endif
 
     // check results
     printf("Checking results:\n");
